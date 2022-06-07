@@ -1,16 +1,10 @@
 import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
 import Link from 'next/link'
-import Image from 'next/image'
-import ellipse from '../../../assets/img/ellipse.png'
-import youtube from '../../../assets/img/youtube.svg'
-import discord from '../../../assets/img/discord.svg'
-import twitter from '../../../assets/img/twitter.svg'
-import instagram from '../../../assets/img/instagram.svg'
-import tiktok from '../../../assets/img/tiktok.svg'
-import subtract from '../../../assets/img/subtract.svg'
+import SocialIcons from '../shared_components/social_icons'
+import ellipse from '../../assets/img/ellipse.png'
 
-const BottomHeaderContent = () => {
+const Content = () => {
    return (
       <Box maxW='100%' background={`url(${ellipse.src}) no-repeat top`}>
          <Box
@@ -66,19 +60,7 @@ const BottomHeaderContent = () => {
                </Text>
             </Link>
          </Box>
-         <Box
-            display='flex'
-            justifyContent='space-between'
-            maxW='277px'
-            margin='0 auto 35px'
-         >
-            <Image src={youtube} />
-            <Image src={discord} />
-            <Image src={tiktok} />
-            <Image src={twitter} />
-            <Image src={instagram} />
-            <Image src={subtract} />
-         </Box>
+         <SocialIcons />
          <Box width='796px' margin='0 auto' paddingBottom='40px'>
             <Text
                // fontFamily='Avenir Next'
@@ -96,4 +78,4 @@ const BottomHeaderContent = () => {
    )
 }
 
-export default BottomHeaderContent
+export default Content

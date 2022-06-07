@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { Box, Heading, Text } from '@chakra-ui/react'
-import rhombusSmall from '../../../assets/img/rhombus-small.svg'
-import rhombusBig from '../../../assets/img/rhombus-big.svg'
-import BottomHeaderContent from './BottomHeaderContent'
+import rhombusSmall from '../../assets/img/rhombus-small.svg'
+import rhombusBig from '../../assets/img/rhombus-big.svg'
+import Content from './content'
 
-const BottomHeaderTitle = () => {
+const Title = () => {
    return (
       <Box>
          <Box
@@ -57,9 +57,9 @@ const BottomHeaderTitle = () => {
             </Box>
          </Box>
 
-         <BottomHeaderContent />
+         <Content />
       </Box>
    )
 }
 
-export default BottomHeaderTitle
+export default Title
