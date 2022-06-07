@@ -1,11 +1,10 @@
 import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
-import Link from 'next/link'
+import Button from '../shared_components/button'
 import SocialIcons from '../shared_components/social_icons'
 import ellipse from '../../assets/img/ellipse.png'
 
-const Content = () => {
-   return (
+const Content = () => (
       <Box maxW='100%' background={`url(${ellipse.src}) no-repeat top`}>
          <Box
             w='976px'
@@ -13,52 +12,20 @@ const Content = () => {
             display='flex'
             justifyContent='center'
          >
-            <Link
+            <Button
                href='download-sator-app'
-            >
-               <Text
-                  fontFamily='K2D'
-                  fontSize='20px'
-                  lineHeight='26px'
-                  fontWeight='600'
-                  cursor='pointer'
-                  border='2px solid red'
-                  width='361px'
-                  borderRadius='8px'
-                  widht='361px'
-                  height='66px'
-                  textAlign='center'
-                  paddingTop='19px'
-                  marginRight='12px'
-                  marginTop='-25px'
-                  backgroundColor='white'
-               >
-                  Download Sator App
-               </Text>
-            </Link>
-            <Link
+               text='Download Sator App'
+               paddingTop='19px'
+               marginTop='-25px'
+               marginRight='12px'
+            />
+            <Button
                href='enter-the-nft-marketplace'
-            >
-               <Text
-                  fontFamily='K2D'
-                  fontSize='20px'
-                  lineHeight='26px'
-                  fontWeight='600'
-                  cursor='pointer'
-                  border='2px solid red'
-                  width='361px'
-                  borderRadius='8px'
-                  widht='361px'
-                  height='66px'
-                  textAlign='center'
-                  paddingTop='19px'
-                  marginLeft='12px'
-                  marginTop='-25px'
-                  backgroundColor='white'
-               >
-                  Enter the NFT Marketplace
-               </Text>
-            </Link>
+               text='Enter the NFT Marketplace'
+               paddingTop='19px'
+               marginTop='-25px'
+               marginLeft='12px'
+            />
          </Box>
          <SocialIcons />
          <Box width='796px' margin='0 auto' paddingBottom='40px'>
@@ -76,6 +43,5 @@ const Content = () => {
          </Box>
       </Box>
    )
-}
 
 export default Content
