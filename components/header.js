@@ -9,18 +9,20 @@ const Header = () => {
       <Box
          display='flex'
          justifyContent='space-between'
-         maxW='100%'
+         maxW='1440px'
+         margin='0 auto'
          height='102px'
-         border='1px solid red'
+         border='1px solid blue'
+         background='linear-gradient(136.71deg, rgba(119, 162, 227, 0.14) 13.48%, rgba(186, 158, 244, 0.14) 85.14%), #FFFFFF'
       >
          <MainLogo />
          <MainMenu />
 
          <Box
             display='flex'
-            px='74px'
+            padding='0 72px'
             marginRight='42px'
-            border='1px solid red'
+            border='1px solid blue'
             background='linear-gradient(100.96deg, #FF36EB -41.47%, #1BA2EE 104.91%)'
             backgroundClip='text'
             justifyContent='center'

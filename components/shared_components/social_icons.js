@@ -9,14 +9,14 @@ import instagram from '../../assets/img/instagram.svg'
 import tiktok from '../../assets/img/tiktok.svg'
 import subtract from '../../assets/img/subtract.svg'
 
-const SocialIcons = () => {
+const SocialIcons = ({...props}) => {
    return (
       <Box
          display='flex'
          justifyContent='space-between'
-         maxW='277px'
+         maxWidth='277px'
          cursor='pointer'
-         margin='0 auto 35px'
+         {...props}
       >
          <Link href='1'>
             <Image src={youtube} alt='' />

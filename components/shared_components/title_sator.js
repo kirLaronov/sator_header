@@ -24,13 +24,13 @@ const TitleSator = () => {
          >
             sator
          </Heading>
-         <Box position='absolute' left='720px' top='75px'>
+         <Box position='absolute' left='720px' top='70px'>
             <Image
                src={rhombusSmall}
                alt='Rhombus-Small'
             />
          </Box>
-         <Box position='absolute' left='750px' top='5px'>
+         <Box position='absolute' left='750px' top='0px'>
             <Image
                src={rhombusBig}
                alt='Rhombus-Big'

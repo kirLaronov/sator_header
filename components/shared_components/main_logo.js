@@ -9,7 +9,7 @@ const MainLogo = () => {
          display='flex'
          alignItems='center'
          marginLeft='42px'
-         w='244px'
+         width='244px'
       >
          <Image src={logo} />
          <Heading

@@ -12,6 +12,8 @@ const MainMenu = () => {
          fontWeight='700'
          fontSize='18px'
          lineHeight='23px'
+         maxWidth='491px'
+         letterSpacing='0.09px'
       >
          <Box>
             <Link href='/about'>About</Link>
